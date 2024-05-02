@@ -67,14 +67,6 @@ export const Navbar = styled.nav`
   }
 `;
 
-export const Button = styled.button`
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 2rem;
-  color: #ffffff;
-  background-color: #c00044;
-  max-width: 10rem;
-`;
 
 export const Banner = styled.section`
   background-color: #f2c3cb;

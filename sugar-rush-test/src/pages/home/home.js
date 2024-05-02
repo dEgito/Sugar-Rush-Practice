@@ -1,7 +1,6 @@
 import {
   Container,
   Navbar,
-  Button,
   Banner,
   Wave,
   AboutUs,
@@ -19,13 +18,18 @@ import Card2 from "../../assets/card-2.png";
 import Card3 from "../../assets/card-3.png";
 import Card4 from "../../assets/card-4.png";
 
+import Button from "../../components/button/button";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <Container>
       <Navbar>
         <img src={SmallLogo} alt="logo" />
 
-        <Button type="button">Login</Button>
+        <Link to={"/login"}>
+          <Button category={"secondary"}>Login</Button>
+        </Link>
       </Navbar>
 
       <Banner>
@@ -54,7 +58,9 @@ function Home() {
             </p>
           </div>
 
-          <Button>Saiba mais</Button>
+          <Link to={"/login"}>
+            <Button>Saiba mais</Button>
+          </Link>
         </div>
       </AboutUs>
 
